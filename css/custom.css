@@ -1,8 +1,8 @@
 @font-face {
   /* 为载入的字体取名字(随意) */
-  font-family: 'kai';	
+  font-family:"kai";	
   /* 字体文件地址(相对或者绝对路径都可以) */
-  src: url(/font/JieJieGaoSheng-YingXinChun-2.ttf);
+  src: url("/fonts/online-ogwlp.otf") format("otf");
   /* 定义加粗样式(加粗多少) */
   font-weight: normal;
   /* 定义字体样式(斜体/非斜体) */
@@ -33,6 +33,27 @@
 }
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
+}
+
+/* 导航容器设置为flex布局 */
+.menus {
+  display: flex; /* 启用flex */
+  justify-content: center; /* 水平居中（核心） */
+  align-items: center; /* 可选：垂直居中（如果需要） */
+  width: 100%; /* 确保容器占满宽度 */
+}
+
+/* 菜单列表（ul）清除默认样式 */
+.menus .menu {
+  display: flex; /* 菜单项横向排列 */
+  list-style: none; /* 清除默认列表样式 */
+  margin: 0;
+  padding: 0;
+}
+
+/* 菜单项间距（可选） */
+.menus .menu li {
+  margin: 0 10px;
 }
 
 
