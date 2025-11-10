@@ -51,45 +51,7 @@
   padding: 0;
 }
 
-/* 菜单项间距（可选） */
-.menus .menu li {
-  margin: 0 10px;
-}
-
-.post-ui-icon {
-  margin-right: 2px;
-}
-
-.icon {
-       width: 1em; height: 1em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-}
-
-/* 帧率检测 */
-#fps {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  z-index: 1919810;
-}
-[data-theme="light"] #fps {
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: var(--backdrop-filter);
-  padding: 4px;
-  border-radius: 4px;
-}
-[data-theme="dark"] #fps {
-  background-color: rgba(0, 0, 0, 0.72);
-  backdrop-filter: var(--backdrop-filter);
-  padding: 4px;
-  border-radius: 4px;
-}
-body {
-  background-color: #5a5a5a !important;
-}
-
+/*svg图标大小*/
 .icon {
     width: 3em; height: 3em;
     vertical-align: -0.15em;
