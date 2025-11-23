@@ -7707,6 +7707,717 @@ blockquote.pullquote.right {
   -ms-animation: subtitleFade 6s ease-in-out infinite alternate;
   animation: subtitleFade 6s ease-in-out infinite alternate;
 }
+#moment-page .full-banner {
+  height: 30vh;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+#moment-page .full-banner .banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/img/jk.png") center/cover no-repeat;
+}
+#moment-page .full-banner .banner-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  background: -moz-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  background: -o-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  background: -ms-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+}
+#moment-page .full-banner .banner-content {
+  position: relative;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: #fff;
+}
+#moment-page .full-banner .banner-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+#moment-page .full-banner .banner-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  margin-bottom: 2rem;
+}
+#moment-page .full-banner .banner-content .banner-btn {
+  width: fit-content;
+  padding: 0.4rem 1.5rem;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 0.95rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#moment-page .full-banner .banner-content .banner-btn:hover {
+  background: rgba(255,255,255,0.3);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+#moment-page .container {
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+}
+@media (max-width: 768px) {
+  #moment-page .full-banner {
+    height: 40vh;
+    min-height: 300px;
+  }
+  #moment-page .full-banner .banner-content h1 {
+    font-size: 2.2rem;
+  }
+  #moment-page .full-banner .banner-content p {
+    font-size: 1rem;
+  }
+  #moment-page .full-banner .banner-content .banner-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  #moment-page .container {
+    margin-top: 2rem;
+  }
+}
+body {
+  background: -webkit-linear-gradient(270deg, #0f0f1a 0%, #1a1a2e 100%);
+  background: -moz-linear-gradient(270deg, #0f0f1a 0%, #1a1a2e 100%);
+  background: -o-linear-gradient(270deg, #0f0f1a 0%, #1a1a2e 100%);
+  background: -ms-linear-gradient(270deg, #0f0f1a 0%, #1a1a2e 100%);
+  background: linear-gradient(180deg, #0f0f1a 0%, #1a1a2e 100%);
+  background-image: -webkit-radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), -webkit-radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-image: -moz-radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), -moz-radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-image: -o-radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), -o-radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-image: -ms-radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), -ms-radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+#moment-page {
+  padding: 0;
+  overflow-x: hidden;
+}
+#moment-page .banner {
+  width: 100vw;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+#moment-page .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("你的横幅背景图路径") center/cover no-repeat;
+  background-blend-mode: overlay;
+  filter: brightness(0.6);
+}
+#moment-page .banner .banner-content {
+  position: relative;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: #fff;
+}
+#moment-page .banner .banner-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+#moment-page .banner .banner-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  max-width: 600px;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+#moment-page .banner .banner-content .about-btn {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#moment-page .banner .banner-content .about-btn:hover {
+  background: rgba(255,255,255,0.2);
+  -webkit-transform: translateY(-50%) scale(1.05);
+  -moz-transform: translateY(-50%) scale(1.05);
+  -o-transform: translateY(-50%) scale(1.05);
+  -ms-transform: translateY(-50%) scale(1.05);
+  transform: translateY(-50%) scale(1.05);
+}
+#moment-page .content-wrapper {
+  max-width: 1400px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+#moment-page .moment-list {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+  column-gap: 2.5rem;
+}
+#moment-page .moment-list > * {
+  break-inside: avoid;
+  margin-bottom: 2.5rem;
+}
+#moment-page .moment-card {
+  background: rgba(30,30,40,0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 1.6rem;
+  -webkit-box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: relative;
+}
+#moment-page .moment-card::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+}
+#moment-page .moment-card:hover {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  border-color: rgba(255,255,255,0.15);
+}
+#moment-page .moment-card .moment-meta {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.85rem;
+}
+#moment-page .moment-card .moment-meta i {
+  margin-right: 0.6rem;
+  color: #8ea1e1;
+}
+#moment-page .moment-card .moment-content {
+  color: rgba(255,255,255,0.9);
+  line-height: 1.75;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+#moment-page .moment-card .moment-content img {
+  width: 100%;
+  border-radius: 6px;
+  margin: 1rem 0;
+  display: block;
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+#moment-page .moment-card .moment-action {
+  text-align: right;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+#moment-page .moment-card .moment-action:hover {
+  color: #8ea1e1;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #moment-page .moment-list {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  #moment-page .banner {
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  #moment-page .banner {
+    height: 200px;
+  }
+  #moment-page .banner .banner-content h1 {
+    font-size: 2rem;
+  }
+  #moment-page .banner .banner-content p {
+    font-size: 1rem;
+  }
+  #moment-page .banner .banner-content .about-btn {
+    display: none;
+  }
+  #moment-page .moment-list {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+  }
+  #moment-page .content-wrapper {
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+  #moment-page .moment-card {
+    padding: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+#momentN-page .full-banner {
+  height: 30vh;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+#momentN-page .full-banner .banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/img/jk.png") center/cover no-repeat;
+}
+#momentN-page .full-banner .banner-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  background: -moz-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  background: -o-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  background: -ms-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+}
+#momentN-page .full-banner .banner-content {
+  position: relative;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem; /* 左下内边距，避免贴边 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; /* 文字和按钮垂直排列 */
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end; /* 垂直方向靠底部 */
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start; /* 水平方向靠左 */
+  color: #fff;
+}
+#momentN-page .full-banner .banner-content p {
+  position: absolute; /* 绝对定位脱离文档流 */
+  left: 1rem; /* 距离左侧边缘2rem（可调整） */
+  bottom: 0.8rem; /* 距离底部边缘4rem（为按钮预留空间） */
+  margin: 0; /* 清除默认margin */
+  z-index: 2; /* 确保在背景图上方 */
+  color: #fff; /* 文字白色，适配深色背景 */
+  max-width: 500px; /* 限制文字宽度，避免过长 */
+}
+#momentN-page .full-banner .banner-content .banner-btn {
+  position: absolute; /* 绝对定位脱离文档流 */
+  right: 1rem; /* 距离右侧边缘2rem（可调整） */
+  bottom: 0.8rem; /* 距离底部边缘2rem（与文字保持间距） */
+  z-index: 2; /* 确保在背景图上方 */
+/* 按钮基础样式（保持美观） */
+  padding: 0.25rem 1.5rem;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 0.95rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#momentN-page .full-banner .banner-content .banner-btn:hover {
+  background: rgba(255,255,255,0.3);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+#momentN-page .container {
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+}
+@media (max-width: 768px) {
+  #momentN-page .full-banner {
+    height: 40vh;
+    min-height: 300px;
+  }
+  #momentN-page .full-banner .banner-content h1 {
+    font-size: 2.2rem;
+  }
+  #momentN-page .full-banner .banner-content p {
+    font-size: 1rem;
+  }
+  #momentN-page .full-banner .banner-content .banner-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  #momentN-page .container {
+    margin-top: 2rem;
+  }
+}
+body {
+  background: -webkit-linear-gradient(270deg, #0f0f1a 0%, #1a1a2e 100%);
+  background: -moz-linear-gradient(270deg, #0f0f1a 0%, #1a1a2e 100%);
+  background: -o-linear-gradient(270deg, #0f0f1a 0%, #1a1a2e 100%);
+  background: -ms-linear-gradient(270deg, #0f0f1a 0%, #1a1a2e 100%);
+  background: linear-gradient(180deg, #0f0f1a 0%, #1a1a2e 100%);
+  background-image: -webkit-radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), -webkit-radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-image: -moz-radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), -moz-radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-image: -o-radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), -o-radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-image: -ms-radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), -ms-radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+#momentN-page {
+  padding: 0;
+  overflow-x: hidden;
+}
+#momentN-page .banner {
+  width: 100vw;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+#momentN-page .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("你的横幅背景图路径") center/cover no-repeat;
+  background-blend-mode: overlay;
+  filter: brightness(0.6);
+}
+#momentN-page .banner .banner-content {
+  position: relative;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: #fff;
+}
+#momentN-page .banner .banner-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+#momentN-page .banner .banner-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  max-width: 600px;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+#momentN-page .banner .banner-content .about-btn {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#momentN-page .banner .banner-content .about-btn:hover {
+  background: rgba(255,255,255,0.2);
+  -webkit-transform: translateY(-50%) scale(1.05);
+  -moz-transform: translateY(-50%) scale(1.05);
+  -o-transform: translateY(-50%) scale(1.05);
+  -ms-transform: translateY(-50%) scale(1.05);
+  transform: translateY(-50%) scale(1.05);
+}
+#momentN-page .content-wrapper {
+  max-width: 1400px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+#momentN-page .momentN-list {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+  column-gap: 2.5rem;
+}
+#momentN-page .momentN-list > * {
+  break-inside: avoid;
+  margin-bottom: 2.5rem;
+}
+#momentN-page .momentN-card {
+  background: rgba(30,30,40,0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 1.6rem;
+  -webkit-box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: relative;
+}
+#momentN-page .momentN-card::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+}
+#momentN-page .momentN-card:hover {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  border-color: rgba(255,255,255,0.15);
+}
+#momentN-page .momentN-card .momentN-meta {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.85rem;
+}
+#momentN-page .momentN-card .momentN-meta i {
+  margin-right: 0.6rem;
+  color: #8ea1e1;
+}
+#momentN-page .momentN-card .momentN-content {
+  color: rgba(255,255,255,0.9);
+  line-height: 1.75;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+#momentN-page .momentN-card .momentN-content img {
+  width: 100%;
+  border-radius: 6px;
+  margin: 1rem 0;
+  display: block;
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+#momentN-page .momentN-card .momentN-action {
+  text-align: right;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+#momentN-page .momentN-card .momentN-action:hover {
+  color: #8ea1e1;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #momentN-page .momentN-list {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  #momentN-page .banner {
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  #momentN-page .banner {
+    height: 200px;
+  }
+  #momentN-page .banner .banner-content h1 {
+    font-size: 2rem;
+  }
+  #momentN-page .banner .banner-content p {
+    font-size: 1rem;
+  }
+  #momentN-page .banner .banner-content .about-btn {
+    display: none;
+  }
+  #momentN-page .momentN-list {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+  }
+  #momentN-page .content-wrapper {
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+  #momentN-page .momentN-card {
+    padding: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
 @-moz-keyframes hover-glow-breathe {
   0% {
     filter: brightness(1.2);
