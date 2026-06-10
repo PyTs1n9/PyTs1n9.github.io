@@ -171,15 +171,36 @@ btf.addGlobalFn('pjaxSend', () => {
 </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(/img/background.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/pic.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fas fa-house"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-note-sticky"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-list"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-user"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/personal/bb/"><i class="fa-fw far fa-address-card"></i><span> 个人</span></a></li><li><a class="site-page child" href="/moment/"><i class="fa-fw fas fa-address-book"></i><span> 闲言碎语</span></a></li><li><a class="site-page child" href="/momentN/"><i class="fa-fw fas fa-address-book"></i><span> 牛牛の闲言碎语</span></a></li></ul></div></div></div></div><div class="post type-categories" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/sql/sqln01.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">PyTs1n9's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">数据库简单查询</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fas fa-house"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-note-sticky"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-list"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-user"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/personal/bb/"><i class="fa-fw far fa-address-card"></i><span> 个人</span></a></li><li><a class="site-page child" href="/moment/"><i class="fa-fw fas fa-address-book"></i><span> 闲言碎语</span></a></li><li><a class="site-page child" href="/momentN/"><i class="fa-fw fas fa-address-book"></i><span> 牛牛の闲言碎语</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">数据库简单查询</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-06-01T01:07:01.870Z" title="发表于 2026-06-01 09:07:01">2026-06-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-06-01T01:07:01.875Z" title="更新于 2026-06-01 09:07:01">2026-06-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><details class="toggle" ><summary class="toggle-button" style="">阅读前须知-点我下拉</summary><div class="toggle-content"><p>数据库简单查询的学习笔记</p>
 <p>目录</p>
 <ol>
-<li><p>数据库简单查询<br>├── 1.1 数据库查询是什么？<br>├── 1.2 查询的核心 —— SELECT<br>├── 1.3 查询指定字段<br>├── 1.4 筛选条件 —— WHERE<br>├── 1.5 排序 —— ORDER BY<br>├── 1.6 并或 —— AND 和 OR<br>├── 1.7 模糊查询 —— LIKE<br>├── 1.8 限制数量 —— LIMIT<br>└── 1.9 重命名 —— AS</p>
+<li>
+<p>数据库简单查询<br>
+├── 1.1 数据库查询是什么？<br>
+├── 1.2 查询的核心 —— SELECT<br>
+├── 1.3 查询指定字段<br>
+├── 1.4 筛选条件 —— WHERE<br>
+├── 1.5 排序 —— ORDER BY<br>
+├── 1.6 并或 —— AND 和 OR<br>
+├── 1.7 模糊查询 —— LIKE<br>
+├── 1.8 限制数量 —— LIMIT<br>
+└── 1.9 重命名 —— AS</p>
 </li>
-<li><p>数据库聚合函数<br>├── 2.1 统计数量 —— COUNT()<br>├── 2.2 简单函数 —— SUM(),AVG(),MAX(),MIN()<br>├── 2.3 分组 —— GROUP BY<br>├── 2.4 分组后筛选 —— HAVING<br>└── 2.5 SQL的执行顺序</p>
+<li>
+<p>数据库聚合函数<br>
+├── 2.1 统计数量 —— COUNT()<br>
+├── 2.2 简单函数 —— SUM(),AVG(),MAX(),MIN()<br>
+├── 2.3 分组 —— GROUP BY<br>
+├── 2.4 分组后筛选 —— HAVING<br>
+└── 2.5 SQL的执行顺序</p>
 </li>
 </ol>
 </div></details>
-<h1 id="数据库简单查询"><a href="#数据库简单查询" class="headerlink" title="数据库简单查询"></a>数据库简单查询</h1><h3 id="1-数据库查询是什么？"><a href="#1-数据库查询是什么？" class="headerlink" title="1.数据库查询是什么？"></a>1.数据库查询是什么？</h3><p>数据库查询本质是：从数据库中“提取数据”，也可以简单理解为：在Excel表格中查找内容。只是数据库更加强大。<br><code>SQL(Structured Query Language)</code>是查询语言，就是结构化查询语言。专门用来对数据增删改查，核心就是<code>SELECE</code>，本篇文章，就会围绕查询，进行数据库简单查询的学习笔记整理。</p>
-<p>举一个实例，下方有一个名为student的表格：<br>表(table): EXCEL表格<br>行(row): 一条数据<br>列(column): 一个字段</p>
-<div class="table-container">
+<h1>数据库简单查询</h1>
+<h3 id="1-数据库查询是什么？">1.数据库查询是什么？</h3>
+<p>数据库查询本质是：从数据库中“提取数据”，也可以简单理解为：在Excel表格中查找内容。只是数据库更加强大。<br>
+<code>SQL(Structured Query Language)</code>是查询语言，就是结构化查询语言。专门用来对数据增删改查，核心就是<code>SELECE</code>，本篇文章，就会围绕查询，进行数据库简单查询的学习笔记整理。</p>
+<p>举一个实例，下方有一个名为student的表格：<br>
+表(table): EXCEL表格<br>
+行(row): 一条数据<br>
+列(column): 一个字段</p>
 <table>
 <thead>
 <tr>
@@ -214,16 +235,18 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="2-查询的核心——SELECT"><a href="#2-查询的核心——SELECT" class="headerlink" title="2.查询的核心——SELECT"></a>2.查询的核心——SELECT</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 字段 <span class="keyword">FROM</span> 表名;</span><br></pre></td></tr></table></figure>
+<h3 id="2-查询的核心——SELECT">2.查询的核心——SELECT</h3>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 字段 <span class="keyword">FROM</span> 表名;</span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>以下笔记全部结合于上述的实例表格</code></li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
-<p>SELECT：查询。*：all的意思，所有字段。FROM：从哪个表。<br>完整含义：查询student表中是所有数据</p>
-<h3 id="3-查询指定字段"><a href="#3-查询指定字段" class="headerlink" title="3.查询指定字段"></a>3.查询指定字段</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, score <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
-<p>如果不使用查询全部的*，上述代码的完整含义为：只查询student表中姓名和成绩。<br>实际效果如下：</p>
-<div class="table-container">
+<p>SELECT：查询。*：all的意思，所有字段。FROM：从哪个表。<br>
+完整含义：查询student表中是所有数据</p>
+<h3 id="3-查询指定字段">3.查询指定字段</h3>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, score <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
+<p>如果不使用查询全部的*，上述代码的完整含义为：只查询student表中姓名和成绩。<br>
+实际效果如下：</p>
 <table>
 <thead>
 <tr>
@@ -246,11 +269,10 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="4-筛选条件——WHERE"><a href="#4-筛选条件——WHERE" class="headerlink" title="4.筛选条件——WHERE"></a>4.筛选条件——WHERE</h3><ul>
+<h3 id="4-筛选条件——WHERE">4.筛选条件——WHERE</h3>
+<ul>
 <li>首先要了解查询运算符：</li>
 </ul>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -285,7 +307,6 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> age <span class="operator">=</span> <span class="number">18</span>;</span><br></pre></td></tr></table></figure>
 <p>完整含义：查询student表中年龄等于18的学生</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> score <span class="operator">&gt;</span> <span class="number">90</span>;</span><br></pre></td></tr></table></figure>
@@ -302,7 +323,6 @@ btf.addGlobalFn('pjaxSend', () => {
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> phone <span class="keyword">IS</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure>
 <p>完整含义：查询student表中没有手机号的学生</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -324,10 +344,8 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> phone <span class="keyword">IS</span> <span class="keyword">NOT NULL</span>;</span><br></pre></td></tr></table></figure>
 <p>完整含义：查询student表中有手机号的学生</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -344,21 +362,23 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="5-排序——ORDER-BY"><a href="#5-排序——ORDER-BY" class="headerlink" title="5. 排序——ORDER BY"></a>5. 排序——ORDER BY</h3><p>ASC : 升序<br>DESC : 降序</p>
+<h3 id="5-排序——ORDER-BY">5. 排序——ORDER BY</h3>
+<p>ASC : 升序<br>
+DESC : 降序</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> score <span class="keyword">ASC</span>;</span><br></pre></td></tr></table></figure>
 <p>完整含义：查询student表并升序排序</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> score <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
 <p>完整含义：查询student表并降序排序</p>
-<h3 id="6-并或——AND-和-OR"><a href="#6-并或——AND-和-OR" class="headerlink" title="6. 并或——AND 和 OR"></a>6. 并或——AND 和 OR</h3><p>AND：同时满足</p>
+<h3 id="6-并或——AND-和-OR">6. 并或——AND 和 OR</h3>
+<p>AND：同时满足</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> age <span class="operator">=</span> <span class="number">18</span> <span class="keyword">AND</span> score <span class="operator">&gt;</span> <span class="number">90</span>;</span><br></pre></td></tr></table></figure>
 <p>完整含义：查询student表中年龄18并且成绩大于90的学生</p>
 <p>OR：满足一个即可</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> age <span class="operator">=</span> <span class="number">18</span> <span class="keyword">OR</span> score <span class="operator">&gt;</span> <span class="number">90</span>;</span><br></pre></td></tr></table></figure>
 <p>完整含义：查询student表中年龄18或者成绩大于90的学生</p>
-<h3 id="7-模糊查询——LIKE"><a href="#7-模糊查询——LIKE" class="headerlink" title="7. 模糊查询——LIKE"></a>7. 模糊查询——LIKE</h3><p>模糊查询，也叫<strong>模式匹配</strong>，用于在 WHERE 子句中搜索列中的指定模式。当你只记得部分信息（比如”名字里带张”、”以某字开头”）而无法用 <code>=</code> 精确匹配时，就可以使用 LIKE。</p>
+<h3 id="7-模糊查询——LIKE">7. 模糊查询——LIKE</h3>
+<p>模糊查询，也叫<strong>模式匹配</strong>，用于在 WHERE 子句中搜索列中的指定模式。当你只记得部分信息（比如&quot;名字里带张&quot;、“以某字开头”）而无法用 <code>=</code> 精确匹配时，就可以使用 LIKE。</p>
 <p>LIKE 依赖两个<strong>通配符</strong>来实现模糊匹配：</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -380,14 +400,12 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
 <blockquote>
-<p>核心区别：<code>%</code> 像”省略号”——可以代表任意长度（包括空）；<code>_</code> 像”占位符”——每个 <code>_</code> 严格占一个字符位置。</p>
+<p>核心区别：<code>%</code> 像&quot;省略号&quot;——可以代表任意长度（包括空）；<code>_</code> 像&quot;占位符&quot;——每个 <code>_</code> 严格占一个字符位置。</p>
 </blockquote>
 <hr>
 <p><strong>1. % 通配符示例：</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 以&quot;张&quot;开头，后面跟0个或多个任意字符</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;张%&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -408,17 +426,15 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
-<p>查询结果包括”张三”（因为”三”被 <code>%</code> 匹配了）。如果还有”张”这个单字名也会被匹配（<code>%</code> 可以匹配0个字符）。</p>
+<p>查询结果包括&quot;张三&quot;（因为&quot;三&quot;被 <code>%</code> 匹配了）。如果还有&quot;张&quot;这个单字名也会被匹配（<code>%</code> 可以匹配0个字符）。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 以&quot;张&quot;结尾，前面有0个或多个任意字符</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;%张&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p>只要名字最后一个字是”张”就会被查出。</p>
+<p>只要名字最后一个字是&quot;张&quot;就会被查出。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 任意位置包含&quot;张&quot;</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;%张%&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p>这是最常用的模糊查询写法：只要名字里有”张”就匹配，不论位置。</p>
+<p>这是最常用的模糊查询写法：只要名字里有&quot;张&quot;就匹配，不论位置。</p>
 <hr>
 <p><strong>2. _ 通配符示例：</strong></p>
 <p><code>_</code> 最核心的规则是：<strong>一个下划线严格匹配一个字符，不能多也不能少。</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 姓&quot;张&quot;且名字恰好是2个字（_ 代表恰好1个字符）</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;张_&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -439,8 +455,7 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
-<p><code>&#39;张_&#39;</code> 匹配”张三”，但不匹配”张”（少了1个字）也不匹配”张三四”（多了1个字）。</p>
+<p><code>'张_'</code> 匹配&quot;张三&quot;，但不匹配&quot;张&quot;（少了1个字）也不匹配&quot;张三四&quot;（多了1个字）。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 名字为3个字，且中间那个字是&quot;小&quot;</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;_小_&#x27;</span>;</span><br></pre></td></tr></table></figure>
 <p>这个写法拆解为：</p>
 <ul>
@@ -448,7 +463,7 @@ btf.addGlobalFn('pjaxSend', () => {
 <li><code>小</code> → 第2个字（精确匹配）</li>
 <li>第2个 <code>_</code> → 第3个字（任意）</li>
 </ul>
-<p>所以 <code>&#39;_小_&#39;</code> 能匹配”李小三””王小四”这类名字，但不匹配”小张”（只有2个字）或”李小三四”（有4个字）。</p>
+<p>所以 <code>'_小_'</code> 能匹配&quot;李小三&quot;“王小四&quot;这类名字，但不匹配&quot;小张”（只有2个字）或&quot;李小三四&quot;（有4个字）。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 名字恰好是3个字（3个下划线 = 3个字符）</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">LIKE</span> <span class="string">&#x27;___&#x27;</span>;</span><br></pre></td></tr></table></figure>
 <p>这是 <code>_</code> 的经典用法：不用关心每个位置是什么字，只限定字符数量。</p>
 <hr>
@@ -457,11 +472,10 @@ btf.addGlobalFn('pjaxSend', () => {
 <p>联合使用时可以组合出更灵活的匹配规则：</p>
 <ul>
 <li><code>_</code> 负责精确控制某几个位置的字符数</li>
-<li><code>%</code> 负责其余位置”任意长度”的模糊匹配</li>
+<li><code>%</code> 负责其余位置&quot;任意长度&quot;的模糊匹配</li>
 </ul>
 <hr>
 <p><strong>通配符总表：</strong></p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -473,27 +487,27 @@ btf.addGlobalFn('pjaxSend', () => {
 <tbody>
 <tr>
 <td style="text-align:center"><code>张%</code></td>
-<td style="text-align:left">以”张”开头</td>
+<td style="text-align:left">以&quot;张&quot;开头</td>
 <td style="text-align:left">张、张三、张三四</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>%张</code></td>
-<td style="text-align:left">以”张”结尾</td>
+<td style="text-align:left">以&quot;张&quot;结尾</td>
 <td style="text-align:left">张、小张、小小张</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>%张%</code></td>
-<td style="text-align:left">包含”张”</td>
+<td style="text-align:left">包含&quot;张&quot;</td>
 <td style="text-align:left">张、张三、小张、小小张五</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>张_</code></td>
-<td style="text-align:left">姓”张”且恰好2个字</td>
+<td style="text-align:left">姓&quot;张&quot;且恰好2个字</td>
 <td style="text-align:left">张三、张四</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>_小_</code></td>
-<td style="text-align:left">3个字且中间是”小”</td>
+<td style="text-align:left">3个字且中间是&quot;小&quot;</td>
 <td style="text-align:left">李小三、王小四</td>
 </tr>
 <tr>
@@ -503,19 +517,20 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 <tr>
 <td style="text-align:center"><code>张_%</code></td>
-<td style="text-align:left">姓”张”且至少2个字</td>
+<td style="text-align:left">姓&quot;张&quot;且至少2个字</td>
 <td style="text-align:left">张三、张三四五</td>
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="8-限制数量——LIMIT"><a href="#8-限制数量——LIMIT" class="headerlink" title="8. 限制数量——LIMIT"></a>8. 限制数量——LIMIT</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line">LIMIT <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="8-限制数量——LIMIT">8. 限制数量——LIMIT</h3>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line">LIMIT <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
 <p>完整含义：只查询student表中前两条数据</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> score <span class="keyword">DESC</span></span><br><span class="line">LIMIT <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-<p>查询了整个表，在对其进行降序后，只查询第一条数据，就是成绩最大的<br>完整含义：查询student表中成绩最高的一位学生</p>
-<h3 id="9-重命名——AS"><a href="#9-重命名——AS" class="headerlink" title="9. 重命名——AS"></a>9. 重命名——AS</h3><p>对比以下2种写法，都是查询了student表中年龄的列，对比有AS和没AS的区别</p>
+<p>查询了整个表，在对其进行降序后，只查询第一条数据，就是成绩最大的<br>
+完整含义：查询student表中成绩最高的一位学生</p>
+<h3 id="9-重命名——AS">9. 重命名——AS</h3>
+<p>对比以下2种写法，都是查询了student表中年龄的列，对比有AS和没AS的区别</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> age </span><br><span class="line"><span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -531,9 +546,7 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> age <span class="keyword">AS</span> 年龄</span><br><span class="line"><span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -549,13 +562,18 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
-<h1 id="数据库聚合函数"><a href="#数据库聚合函数" class="headerlink" title="数据库聚合函数"></a>数据库聚合函数</h1><h3 id="1-统计数量——COUNT"><a href="#1-统计数量——COUNT" class="headerlink" title="1. 统计数量——COUNT()"></a>1. 统计数量——COUNT()</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
-<p>完整含义：统计所有的学生人数(COUNT(*)含义是统计所有行数)<br>结果  —&gt; <code>3</code></p>
+<h1>数据库聚合函数</h1>
+<h3 id="1-统计数量——COUNT">1. 统计数量——COUNT()</h3>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
+<p>完整含义：统计所有的学生人数(COUNT(*)含义是统计所有行数)<br>
+结果  --&gt; <code>3</code></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">WHERE</span> age <span class="operator">=</span> <span class="number">18</span>;</span><br></pre></td></tr></table></figure>
-<p>逻辑是统计完所有行数后，找到年龄是18的学生<br>完整含义：统计所有的学生人数<br>结果  —&gt; <code>2</code></p>
-<p>COUNT(<em>)和SELECT </em> 的本质区别是：前者是“有多少个”，后者是“都有谁？”</p>
-<h3 id="2-简单函数——SUM-AVG-MAX-MIN"><a href="#2-简单函数——SUM-AVG-MAX-MIN" class="headerlink" title="2. 简单函数——SUM(),AVG(),MAX(),MIN()"></a>2. 简单函数——SUM(),AVG(),MAX(),MIN()</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUM</span>(score) <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
+<p>逻辑是统计完所有行数后，找到年龄是18的学生<br>
+完整含义：统计所有的学生人数<br>
+结果  --&gt; <code>2</code></p>
+<p>COUNT(*)和SELECT * 的本质区别是：前者是“有多少个”，后者是“都有谁？”</p>
+<h3 id="2-简单函数——SUM-AVG-MAX-MIN">2. 简单函数——SUM(),AVG(),MAX(),MIN()</h3>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUM</span>(score) <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
 <p>SUM()求和:计算95+88+76</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">AVG</span>(score) <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
 <p>AVG()求平均值</p>
@@ -563,8 +581,8 @@ btf.addGlobalFn('pjaxSend', () => {
 <p>MAX()最大值</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">MIN</span>(score) <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
 <p>MIN()最小值</p>
-<h3 id="3-分组——GROUP-BY"><a href="#3-分组——GROUP-BY" class="headerlink" title="3. 分组——GROUP BY"></a>3. 分组——GROUP BY</h3><p>假如现在有一个新表grade：</p>
-<div class="table-container">
+<h3 id="3-分组——GROUP-BY">3. 分组——GROUP BY</h3>
+<p>假如现在有一个新表grade：</p>
 <table>
 <thead>
 <tr>
@@ -591,11 +609,9 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
 <p>如果需要统计每个班级的平均分，就需要分组。GROUP BY 基本语法：<code>SELECT 分组字段,聚合函数 FROM 表名 GROUP BY 分组字段;</code></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> class <span class="keyword">AS</span> 班级, <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">AS</span> 人数</span><br><span class="line"><span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> class;</span><br></pre></td></tr></table></figure>
 <p>先统计每个班级的人数：</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -614,9 +630,7 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> class <span class="keyword">AS</span> 班级, <span class="built_in">AVG</span>(score) <span class="keyword">AS</span> 平均分</span><br><span class="line"><span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> class;</span><br></pre></td></tr></table></figure>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -635,11 +649,12 @@ btf.addGlobalFn('pjaxSend', () => {
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="4-分组后筛选——HAVING"><a href="#4-分组后筛选——HAVING" class="headerlink" title="4. 分组后筛选——HAVING"></a>4. 分组后筛选——HAVING</h3><p>区分：WHERE是分组之前的筛选，HAVING是分组之后的筛选，并且WHERE不能使用聚合函数，仅针对行；HAVING可以使用聚合函数，并且针对组。</p>
+<h3 id="4-分组后筛选——HAVING">4. 分组后筛选——HAVING</h3>
+<p>区分：WHERE是分组之前的筛选，HAVING是分组之后的筛选，并且WHERE不能使用聚合函数，仅针对行；HAVING可以使用聚合函数，并且针对组。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> class, <span class="built_in">AVG</span>(score)</span><br><span class="line"><span class="keyword">FROM</span> student</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> class</span><br><span class="line"><span class="keyword">HAVING</span> <span class="built_in">AVG</span>(score) <span class="operator">&gt;</span> <span class="number">80</span>;</span><br></pre></td></tr></table></figure>
 <p>完整含义：查询grade表中平均分大于80分的班级</p>
-<h3 id="5-SQL的执行顺序"><a href="#5-SQL的执行顺序" class="headerlink" title="5. SQL的执行顺序"></a>5. SQL的执行顺序</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line"><span class="keyword">WHERE</span></span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span></span><br><span class="line"><span class="keyword">HAVING</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span></span><br><span class="line">LIMIT</span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>数据库简单查询</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://pyts1n9.github.io/posts/sqln01.html">https://pyts1n9.github.io/posts/sqln01.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>PyTs1n9</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2026-06-01</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2026-06-01</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><a class="post-meta__tags" href="/tags/SQL/">SQL</a></div><div class="post-share"><div class="social-share" data-image="/img/sql/sqln01.png" data-sites="wechat,qq,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/AliPayCode.jpg" target="_blank"><img class="post-qr-code-img" src="/img/AliPayCode.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li><li class="reward-item"><a href="/img/WxPayCode.jpg" target="_blank"><img class="post-qr-code-img" src="/img/WxPayCode.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/pysn06.html" title="Python 文件基础操作（六）"><img class="cover" src="/img/python/%E6%96%87%E4%BB%B6%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Python 文件基础操作（六）</div></div><div class="info-2"><div class="info-item-1">引入，打开，读取，写入，追加文件</div></div></div></a><a class="pagination-related" href="/posts/pysn07.html" title="Python 异常处理（七）"><img class="cover" src="/img/python/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Python 异常处理（七）</div></div><div class="info-2"><div class="info-item-1">捕获异常，传递异常</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/aasn.html" title="Agent AI Study Note"><img class="cover" src="/img/aasn.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-04-23</div><div class="info-item-2">Agent AI Study Note</div></div><div class="info-2"><div class="info-item-1">Agent AI 入门笔记</div></div></div></a><a class="pagination-related" href="/posts/mln01.html" title="深度学习 · save &amp; load model"><img class="cover" src="/img/DMNote.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-26</div><div class="info-item-2">深度学习 · save &amp; load model</div></div><div class="info-2"><div class="info-item-1">NVIDIA Deep Learning Notes</div></div></div></a><a class="pagination-related" href="/posts/jssn.html" title="JavaScript Study Note"><img class="cover" src="/img/jssn.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-11-23</div><div class="info-item-2">JavaScript Study Note</div></div><div class="info-2"><div class="info-item-1">个人学习JavaScript的一些笔记，仅供参考</div></div></div></a><a class="pagination-related" href="/posts/pysn01.html" title="Python 基础语法（一）"><img class="cover" src="/img/python/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-02</div><div class="info-item-2">Python 基础语法（一）</div></div><div class="info-2"><div class="info-item-1">字面量，注释，变量，数据类型，标识符，运算符</div></div></div></a><a class="pagination-related" href="/posts/pysn04.html" title="Python 函数使用（四）"><img class="cover" src="/img/python/%E5%87%BD%E6%95%B0%E4%BD%BF%E7%94%A8.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-31</div><div class="info-item-2">Python 函数使用（四）</div></div><div class="info-2"><div class="info-item-1">定义，调用，变量作用域，传参方式，lambda匿名函数</div></div></div></a><a class="pagination-related" href="/posts/pysn02.html" title="Python 判断语句（二）"><img class="cover" src="/img/python/%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-31</div><div class="info-item-2">Python 判断语句（二）</div></div><div class="info-2"><div class="info-item-1">布尔类型，比较，if，逻辑运算，嵌套判断，三元表达式</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author_top is-center"><div class="card-info-avatar"><div class="avatar-img"><img src="/img/pic.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">💟</g-emoji><span>等她出现</span></div></div></div><b><div class="author-info__name">PyTs1n9</div></b><div class="author-info__description">柏青的小家</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/PyTs1n9" target="_blank" title="Github"><svg class="social_icon GitHub" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-github"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://res.abeim.cn/api/qq/?qq=1990629881" target="_blank" title="QQ"><svg class="social_icon QQ" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-QQ"></use></svg></a><a class="social-icon faa-parent animated-hover" href="/img/QRCode.jpg" target="_blank" title="Wechat"><svg class="social_icon WeChat" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-weChat"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/你的ID" target="_blank" title="Bilibili"><svg class="social_icon BiliBili" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bilibili"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://y.qq.com/n/ryqq/singer/000QhjVS1ctpuL" target="_blank" title="Music"><svg class="social_icon QQMusic" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-QQyinle"></use></svg></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><center><b>--- 野生の小柏青他说 ---<br><font color="#5ea6e5">欢迎来到我的博客！<br>我会不定时更新编程的心得和编曲的灵感！欢迎每一个陌生人留下Ta的足迹~</font><br>--- 暂定博客域名 ---<br><a href="https://pyts1n9.github.io/" title="此线路部署于Netlify" class="anno_content"><font color="#5ea6e5">PyTs1n9.github.io/</font></a><br>--- 他的音乐小屋 ---<br>🍧<a target="_blank" rel="noopener" href="https://y.qq.com/n/ryqq/search?w=%E8%8B%8F%E4%BB%A5%E5%B7%9D&t=song&remoteplace=txt.yqq.top" title="点这里可以直接传送到我的音乐小屋！" class="anno_content"><font color="#5ea6e5">点此传送</font></a>🍧</b></center></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E5%8D%95%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.</span> <span class="toc-text">数据库简单查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">1.数据库查询是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%9F%A5%E8%AF%A2%E7%9A%84%E6%A0%B8%E5%BF%83%E2%80%94%E2%80%94SELECT"><span class="toc-number">1.2.</span> <span class="toc-text">2.查询的核心——SELECT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E5%AD%97%E6%AE%B5"><span class="toc-number">1.3.</span> <span class="toc-text">3.查询指定字段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%AD%9B%E9%80%89%E6%9D%A1%E4%BB%B6%E2%80%94%E2%80%94WHERE"><span class="toc-number">1.4.</span> <span class="toc-text">4.筛选条件——WHERE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%8E%92%E5%BA%8F%E2%80%94%E2%80%94ORDER-BY"><span class="toc-number">1.5.</span> <span class="toc-text">5. 排序——ORDER BY</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%B9%B6%E6%88%96%E2%80%94%E2%80%94AND-%E5%92%8C-OR"><span class="toc-number">1.6.</span> <span class="toc-text">6. 并或——AND 和 OR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2%E2%80%94%E2%80%94LIKE"><span class="toc-number">1.7.</span> <span class="toc-text">7. 模糊查询——LIKE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E9%99%90%E5%88%B6%E6%95%B0%E9%87%8F%E2%80%94%E2%80%94LIMIT"><span class="toc-number">1.8.</span> <span class="toc-text">8. 限制数量——LIMIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E9%87%8D%E5%91%BD%E5%90%8D%E2%80%94%E2%80%94AS"><span class="toc-number">1.9.</span> <span class="toc-text">9. 重命名——AS</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text">数据库聚合函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%BB%9F%E8%AE%A1%E6%95%B0%E9%87%8F%E2%80%94%E2%80%94COUNT"><span class="toc-number">2.1.</span> <span class="toc-text">1. 统计数量——COUNT()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%AE%80%E5%8D%95%E5%87%BD%E6%95%B0%E2%80%94%E2%80%94SUM-AVG-MAX-MIN"><span class="toc-number">2.2.</span> <span class="toc-text">2. 简单函数——SUM(),AVG(),MAX(),MIN()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%86%E7%BB%84%E2%80%94%E2%80%94GROUP-BY"><span class="toc-number">2.3.</span> <span class="toc-text">3. 分组——GROUP BY</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%88%86%E7%BB%84%E5%90%8E%E7%AD%9B%E9%80%89%E2%80%94%E2%80%94HAVING"><span class="toc-number">2.4.</span> <span class="toc-text">4. 分组后筛选——HAVING</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-SQL%E7%9A%84%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F"><span class="toc-number">2.5.</span> <span class="toc-text">5. SQL的执行顺序</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div class="footer-flex"><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">叮当传送点</div><div class="footer-flex-content"><a href="/Gallery/" target="_blank" title="⚡️图库">⚡️图库</a><a href="/messageboard/" target="_blank" title="留言板">留言板</a><a href="/talking/" target="_blank" title="说说">说说</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">其他</div><div class="footer-flex-content"><a href="/Gallery/" target="_blank" title="⚡️图库">⚡️图库</a><a href="/messageboard/" target="_blank" title="留言板">留言板</a><a href="/talking/" target="_blank" title="说说">说说</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">语言切换</div><div class="footer-flex-content"><div>简体中文</div><div>繁体中文</div><div>英文</div></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">赞助打赏</div><div class="footer-flex-content"><div><img src='https://origin.picgo.net/2025/11/09/WxPayCode48be58563acd973f.jpg' alt='JerryC' width='100px' height='100px'></div></div></div></div></div><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2024 - 2026 By PyTs1n9</span><span class="framework-info"><span class="footer-separator">|</span><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div><div class="footer_custom_text">Welcome To My Blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(async () => {
+<h3 id="5-SQL的执行顺序">5. SQL的执行顺序</h3>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line"><span class="keyword">WHERE</span></span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span></span><br><span class="line"><span class="keyword">HAVING</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span></span><br><span class="line">LIMIT</span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>数据库简单查询</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://pyts1n9.github.io/posts/sqln01.html">https://pyts1n9.github.io/posts/sqln01.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>PyTs1n9</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2026-06-01</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2026-06-01</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><a class="post-meta__tags" href="/tags/SQL/">SQL</a></div><div class="post-share"><div class="social-share" data-image="/img/sql/sqln01.png" data-sites="wechat,qq,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/AliPayCode.jpg" target="_blank"><img class="post-qr-code-img" src="/img/AliPayCode.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li><li class="reward-item"><a href="/img/WxPayCode.jpg" target="_blank"><img class="post-qr-code-img" src="/img/WxPayCode.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/pysn06.html" title="Python 文件基础操作（六）"><img class="cover" src="/img/python/%E6%96%87%E4%BB%B6%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Python 文件基础操作（六）</div></div><div class="info-2"><div class="info-item-1">引入，打开，读取，写入，追加文件</div></div></div></a><a class="pagination-related" href="/posts/pysn07.html" title="Python 异常处理（七）"><img class="cover" src="/img/python/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Python 异常处理（七）</div></div><div class="info-2"><div class="info-item-1">捕获异常，传递异常</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/aasn.html" title="Agent AI Study Note"><img class="cover" src="/img/aasn.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-04-23</div><div class="info-item-2">Agent AI Study Note</div></div><div class="info-2"><div class="info-item-1">Agent AI 入门笔记</div></div></div></a><a class="pagination-related" href="/posts/mln01.html" title="深度学习 · save &amp; load model"><img class="cover" src="/img/DMNote.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-26</div><div class="info-item-2">深度学习 · save &amp; load model</div></div><div class="info-2"><div class="info-item-1">NVIDIA Deep Learning Notes</div></div></div></a><a class="pagination-related" href="/posts/jssn.html" title="JavaScript Study Note"><img class="cover" src="/img/jssn.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-11-23</div><div class="info-item-2">JavaScript Study Note</div></div><div class="info-2"><div class="info-item-1">个人学习JavaScript的一些笔记，仅供参考</div></div></div></a><a class="pagination-related" href="/posts/pysn01.html" title="Python 基础语法（一）"><img class="cover" src="/img/python/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-02</div><div class="info-item-2">Python 基础语法（一）</div></div><div class="info-2"><div class="info-item-1">字面量，注释，变量，数据类型，标识符，运算符</div></div></div></a><a class="pagination-related" href="/posts/pysn03.html" title="Python 循环语句（三）"><img class="cover" src="/img/python/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-31</div><div class="info-item-2">Python 循环语句（三）</div></div><div class="info-2"><div class="info-item-1">while，for，循环中断，循环嵌套</div></div></div></a><a class="pagination-related" href="/posts/pysn02.html" title="Python 判断语句（二）"><img class="cover" src="/img/python/%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-31</div><div class="info-item-2">Python 判断语句（二）</div></div><div class="info-2"><div class="info-item-1">布尔类型，比较，if，逻辑运算，嵌套判断，三元表达式</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author_top is-center"><div class="card-info-avatar"><div class="avatar-img"><img src="/img/pic.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">💟</g-emoji><span>等她出现</span></div></div></div><b><div class="author-info__name">PyTs1n9</div></b><div class="author-info__description">柏青的小家</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/PyTs1n9" target="_blank" title="Github"><svg class="social_icon GitHub" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-github"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://res.abeim.cn/api/qq/?qq=1990629881" target="_blank" title="QQ"><svg class="social_icon QQ" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-QQ"></use></svg></a><a class="social-icon faa-parent animated-hover" href="/img/QRCode.jpg" target="_blank" title="Wechat"><svg class="social_icon WeChat" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-weChat"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/你的ID" target="_blank" title="Bilibili"><svg class="social_icon BiliBili" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bilibili"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://y.qq.com/n/ryqq/singer/000QhjVS1ctpuL" target="_blank" title="Music"><svg class="social_icon QQMusic" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-QQyinle"></use></svg></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><center><b>--- 野生の小柏青他说 ---<br><font color="#5ea6e5">欢迎来到我的博客！<br>我会不定时更新编程的心得和编曲的灵感！欢迎每一个陌生人留下Ta的足迹~</font><br>--- 暂定博客域名 ---<br><a href="https://pyts1n9.github.io/" title="此线路部署于Netlify" class="anno_content"><font color="#5ea6e5">PyTs1n9.github.io/</font></a><br>--- 他的音乐小屋 ---<br>🍧<a target="_blank" rel="noopener" href="https://y.qq.com/n/ryqq/search?w=%E8%8B%8F%E4%BB%A5%E5%B7%9D&t=song&remoteplace=txt.yqq.top" title="点这里可以直接传送到我的音乐小屋！" class="anno_content"><font color="#5ea6e5">点此传送</font></a>🍧</b></center></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">数据库简单查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">1.数据库查询是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%9F%A5%E8%AF%A2%E7%9A%84%E6%A0%B8%E5%BF%83%E2%80%94%E2%80%94SELECT"><span class="toc-number">1.2.</span> <span class="toc-text">2.查询的核心——SELECT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E5%AD%97%E6%AE%B5"><span class="toc-number">1.3.</span> <span class="toc-text">3.查询指定字段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%AD%9B%E9%80%89%E6%9D%A1%E4%BB%B6%E2%80%94%E2%80%94WHERE"><span class="toc-number">1.4.</span> <span class="toc-text">4.筛选条件——WHERE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%8E%92%E5%BA%8F%E2%80%94%E2%80%94ORDER-BY"><span class="toc-number">1.5.</span> <span class="toc-text">5. 排序——ORDER BY</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%B9%B6%E6%88%96%E2%80%94%E2%80%94AND-%E5%92%8C-OR"><span class="toc-number">1.6.</span> <span class="toc-text">6. 并或——AND 和 OR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2%E2%80%94%E2%80%94LIKE"><span class="toc-number">1.7.</span> <span class="toc-text">7. 模糊查询——LIKE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E9%99%90%E5%88%B6%E6%95%B0%E9%87%8F%E2%80%94%E2%80%94LIMIT"><span class="toc-number">1.8.</span> <span class="toc-text">8. 限制数量——LIMIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E9%87%8D%E5%91%BD%E5%90%8D%E2%80%94%E2%80%94AS"><span class="toc-number">1.9.</span> <span class="toc-text">9. 重命名——AS</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">数据库聚合函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%BB%9F%E8%AE%A1%E6%95%B0%E9%87%8F%E2%80%94%E2%80%94COUNT"><span class="toc-number">2.1.</span> <span class="toc-text">1. 统计数量——COUNT()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%AE%80%E5%8D%95%E5%87%BD%E6%95%B0%E2%80%94%E2%80%94SUM-AVG-MAX-MIN"><span class="toc-number">2.2.</span> <span class="toc-text">2. 简单函数——SUM(),AVG(),MAX(),MIN()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%86%E7%BB%84%E2%80%94%E2%80%94GROUP-BY"><span class="toc-number">2.3.</span> <span class="toc-text">3. 分组——GROUP BY</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%88%86%E7%BB%84%E5%90%8E%E7%AD%9B%E9%80%89%E2%80%94%E2%80%94HAVING"><span class="toc-number">2.4.</span> <span class="toc-text">4. 分组后筛选——HAVING</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-SQL%E7%9A%84%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F"><span class="toc-number">2.5.</span> <span class="toc-text">5. SQL的执行顺序</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div class="footer-flex"><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">叮当传送点</div><div class="footer-flex-content"><a href="/Gallery/" target="_blank" title="⚡️图库">⚡️图库</a><a href="/messageboard/" target="_blank" title="留言板">留言板</a><a href="/talking/" target="_blank" title="说说">说说</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">其他</div><div class="footer-flex-content"><a href="/Gallery/" target="_blank" title="⚡️图库">⚡️图库</a><a href="/messageboard/" target="_blank" title="留言板">留言板</a><a href="/talking/" target="_blank" title="说说">说说</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">语言切换</div><div class="footer-flex-content"><div>简体中文</div><div>繁体中文</div><div>英文</div></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">赞助打赏</div><div class="footer-flex-content"><div><img src='https://origin.picgo.net/2025/11/09/WxPayCode48be58563acd973f.jpg' alt='JerryC' width='100px' height='100px'></div></div></div></div></div><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2024 - 2026 By PyTs1n9</span><span class="framework-info"><span class="footer-separator">|</span><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div><div class="footer_custom_text">Welcome To My Blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(async () => {
   const showKatex = () => {
     document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
   }
